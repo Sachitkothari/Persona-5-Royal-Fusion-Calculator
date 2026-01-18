@@ -1,5 +1,6 @@
 #include <nlohmann/json.hpp>
 #include <fstream>
+#include "data_from_json.hpp"
 
 nlohmann::json personaData;
 

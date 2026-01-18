@@ -2,17 +2,12 @@
 #include <unordered_map>
 #include <nlohmann/json.hpp>
 #include <vector>
-
-struct Persona {
-    std::string name;
-    std::string arcana;
-    int level;
-};
+#include "persona.hpp"
 
 std::unordered_map<std::string, Persona> personaByName;
 std::unordered_map<std::string, std::vector<Persona>> personasByArcana;
 
-void buildLookupTables(nlohmann::json personaData)
+void buildLookupTables(const nlohmann::json& personaData)
 {
     for (const auto &p: personaData)
     {
