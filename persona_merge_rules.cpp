@@ -1,7 +1,8 @@
 #include <unordered_map>
 #include <string>
+#include "persona_merge_rules.hpp"
 
-static const std::unordered_map<std::string, std::string> fusionRules = {
+const std::unordered_map<std::string, std::string> fusionRules = {
     {"Fool+Fool", "Fool"},
     {"Fool+Magician", "Death"},
     {"Fool+Priestess", "Moon"},

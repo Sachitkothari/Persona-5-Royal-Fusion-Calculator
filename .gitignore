@@ -1,0 +1,9 @@
+.vscode/launch.json
+.vscode/tasks.json
+persona_merger.exe
+main.exe
+data_from_json.o
+main.o
+merge.o
+persona_merge_rules.o
+persona.o
