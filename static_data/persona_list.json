@@ -60,11 +60,6 @@
     "level": 53
   },
   {
-    "name": "Crystal Skull",
-    "arcana": "Fool",
-    "level": 50
-  },
-  {
     "name": "Black Frost",
     "arcana": "Fool",
     "level": 67
@@ -130,11 +125,6 @@
     "level": 11
   },
   {
-    "name": "Koh-i-Noor",
-    "arcana": "Priestess",
-    "level": 25
-  },
-  {
     "name": "Isis",
     "arcana": "Priestess",
     "level": 26
@@ -158,11 +148,6 @@
     "name": "Scathach",
     "arcana": "Priestess",
     "level": 77
-  },
-  {
-    "name": "Queen's Necklace",
-    "arcana": "Empress",
-    "level": 15
   },
   {
     "name": "Yaksini",
@@ -198,11 +183,6 @@
     "name": "Alilat",
     "arcana": "Empress",
     "level": 81
-  },
-  {
-    "name": "Regent",
-    "arcana": "Emperor",
-    "level": 10
   },
   {
     "name": "Eligor",
@@ -249,15 +229,15 @@
     "arcana": "Hierophant",
     "level": 15
   },
+    {
+    "name": "Anzu",
+    "arcana": "Hierophant",
+    "level": 25
+  },
   {
     "name": "Orobas",
     "arcana": "Hierophant",
     "level": 17
-  },
-  {
-    "name": "Anzu",
-    "arcana": "Hierophant",
-    "level": 25
   },
   {
     "name": "Daisoujou",
@@ -475,11 +455,6 @@
     "level": 86
   },
   {
-    "name": "Stone of Scone",
-    "arcana": "Fortune",
-    "level": 20
-  },
-  {
     "name": "Clotho",
     "arcana": "Fortune",
     "level": 27
@@ -540,11 +515,6 @@
     "level": 24
   },
   {
-    "name": "Orlov",
-    "arcana": "Strength",
-    "level": 30
-  },
-  {
     "name": "Zouchouten",
     "arcana": "Strength",
     "level": 31
@@ -588,11 +558,6 @@
     "name": "Take-Minakata",
     "arcana": "Hanged Man",
     "level": 26
-  },
-  {
-    "name": "Emperor's Amulet",
-    "arcana": "Hanged Man",
-    "level": 35
   },
   {
     "name": "Hecatoncheires",
@@ -643,11 +608,6 @@
     "name": "Hell Biker",
     "arcana": "Death",
     "level": 37
-  },
-  {
-    "name": "Hope Diamond",
-    "arcana": "Death",
-    "level": 40
   },
   {
     "name": "Pale Rider",
