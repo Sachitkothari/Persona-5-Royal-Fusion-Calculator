@@ -13,9 +13,19 @@ std::string calulate(std::string persona_A, std::string persona_B)
     {
         return "Fusion requires two unique personas.";
     }
-    std::string resultPersonaArcana = fusionRules.at(persona_A + "+" + persona_B);
     loadPersonaData("static_data/persona_list.json");
     buildLookupTables(personaData);
+    //for (auto& [name, persona] : personaByName) std::cout << "[" << name << "]\n";
+    std::string persona1Arcana = personaByName.at(persona_A).arcana;
+    std::string persona2Arcana = personaByName.at(persona_B).arcana;
+    std::string arcanaFormula = persona1Arcana + "+" + persona2Arcana;
+    if(fusionRules.count(arcanaFormula) == 1)
+    {}
+    else
+    {
+        arcanaFormula = persona2Arcana + "+" + persona1Arcana;
+    }
+    std::string resultPersonaArcana = fusionRules.at(arcanaFormula);
     int levelPersonaA = personaByName.at(persona_A).level;
     int levelPersonaB = personaByName.at(persona_B).level;
     int resultPersonaLevel = ((levelPersonaA + levelPersonaB)/2) + 1;
