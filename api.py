@@ -20,7 +20,7 @@ def get_fused_persona():
     persona1 = request.args.get('persona1')
     persona2 = request.args.get('persona2')
     result = lib.merge(persona1.encode(), persona2.encode()).decode()
-    return {result}
+    return result
 
 if __name__ == '__main__':
     app.run()
