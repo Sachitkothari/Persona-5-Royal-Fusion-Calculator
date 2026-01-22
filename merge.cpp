@@ -7,7 +7,7 @@
 #include "data_from_json.hpp"
 #include <vector>
 
-std::string calulate(std::string persona_A, std::string persona_B)
+std::string calculate(std::string persona_A, std::string persona_B)
 {
     if (persona_A == persona_B)
     {
@@ -46,4 +46,11 @@ std::string calulate(std::string persona_A, std::string persona_B)
         }
     }
     return resultPersona.name;
+}
+
+extern "C" const char* merge(const char* a, const char* b) {
+    std::string result = calculate(a, b);
+    char* output = new char[result.size() + 1];
+    std::strcpy(output, result.c_str());
+    return output;
 }

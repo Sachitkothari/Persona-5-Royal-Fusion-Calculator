@@ -13,6 +13,6 @@ int main()
     std::getline(std::cin, p1Name);
     std::cout << "Enter Persona 2 name: ";
     std::getline(std::cin, p2Name);
-    std::cout<<calulate(p1Name, p2Name);
+    std::cout<<calculate(p1Name, p2Name);
     return 0;
 }
