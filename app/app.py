@@ -4,10 +4,11 @@ from PyQt6.QtWidgets import (
     QTextEdit, QPushButton, QVBoxLayout, QHBoxLayout,
     QGroupBox, QSpacerItem, QSizePolicy
 )
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, QUrl, QDir
 from PyQt6.QtGui import QFont
+from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 import requests
-
+import random
 
 class PersonaApp(QWidget):
     def __init__(self):
@@ -19,6 +20,20 @@ class PersonaApp(QWidget):
         # Enable styled backgrounds so the wallpaper actually shows
         self.setObjectName("MainWindow")
         self.setAttribute(Qt.WidgetAttribute.WA_StyledBackground, True)
+
+        self.player = QMediaPlayer()
+        self.audio = QAudioOutput()
+        self.player.setAudioOutput(self.audio)
+        self.audio.setVolume(0.20)
+        # Pick a random .mp3 file from the music folder
+        music_dir = QDir("music")
+        files = music_dir.entryList(["*.mp3"], QDir.Filter.Files)
+        if files: 
+            random_file = random.choice(files)
+            fullpath = music_dir.absoluteFilePath(random_file)
+            url = QUrl.fromLocalFile(fullpath)
+            self.player.setSource(url)
+            self.player.play()
 
         # Main layout container
         main_layout = QVBoxLayout()
